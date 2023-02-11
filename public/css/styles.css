@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0px;
     box-sizing:border-box;
 }
@@ -22,47 +22,38 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 header {
-    /* border: 3px solid green; */
     background: var(--amarillo);
     display: flex;
     flex-direction: column;
 }
 .logo-container {
-    /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
 }
 .menu-container {
-    /* border: 3px solid red; */
     display: none;
 }
 .burger-container {
-    /* border: 3px solid red; */
     display: flex;
     justify-content: center;
 }
 .logo-bar-container {
-    /* border: 3px solid gray; */
     display: flex;
 }
 .card-container {
-    /* border: 3px solid gray; */
     padding: 15px;
 }
 .logo {
-    /* border: 3px solid pink; */
     width: 50%;
     padding: 10px;
 }
 .search-button-container {
-    /* border: 3px solid pink; */
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
 }
 .search-container {
-    /* border: 3px solid brown; */
     display: flex;
     height: 25px;
     width: 90%;
@@ -104,10 +95,12 @@ button {
 }
 .precios {
     font-size: 18px;
+    width: 30%;
 }
 .descuentos {
     font-size:16px;
-    color: var(--verde)
+    color: var(--verde);
+    width: 70%;
 }
 .descripciones {
     font-size: 16px;
@@ -139,8 +132,8 @@ footer {
 .info-producto i{
     display: block;
     font-size: 16px;
-    padding: 5px;
-    width: 30px;
+    padding:5px;
+    width:30px;
     height: 30px;
     border: 1px solid #39b54a;
     background-color: #FFF;
@@ -148,4 +141,7 @@ footer {
     position: absolute;
     right: 20px;
     top: -15px;
+}
+.ip {
+    display: flex;
 }
