@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing:border-box;
 }
 body {
@@ -11,9 +11,9 @@ a {
     color: var(--negro)
 }
 ul {
-    font-size: 16px;
+    font-size: 16px; 
     list-style: none;
-    padding: 0;
+    padding: 0; 
 }
 img {
     width: 100%;
@@ -26,59 +26,59 @@ header {
     display: flex;
     flex-direction: column;
 }
-.logo-container {
+div.logo-container {
     display: flex;
     flex-direction: column;
 }
-.menu-container {
+nav.menu-container {
     display: none;
 }
-.burger-container {
+div.burger-container {
     display: flex;
     justify-content: center;
 }
-.logo-bar-container {
+div.logo-bar-container {
     display: flex;
 }
-.card-container {
+div.card-container {
     padding: 15px;
 }
-.logo {
+div.logo {
     width: 50%;
     padding: 10px;
 }
-.search-button-container {
+div.search-button-container {
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
 }
-.search-container {
+div.search-container {
     display: flex;
     height: 25px;
     width: 90%;
 }
-.card-title {
+h2.card-title {
     font-weight: 400;
     text-align: center;
 }
-.card-title i{
+h2.card-title i{
     margin-right: 10px;
 }
-input {
+div.search-container input {
     width: 95%;
     border:none;
     background-color: var(--blanco);
     border-radius: 5px 0 0 5px;
 }
-button {
+div.search-container button {
     width: 15%;
     padding: 1px;
     border: none;
     background-color: var(--blanco);
     border-radius: 0 5px 5px 0;
 }
-.burger-menu {
+div.burger-menu {
     border: 1px solid black;
     width: 40px;
     height: 40px;
@@ -90,58 +90,157 @@ button {
     color: var(--blanco);
     background-color: var(--azul);
 }
+main h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ultima-visita,
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ultima-visita .productos,
+.ofertas .productos {
+    width: 95%;
+}
+.productos article {
+    background: var(--blanco);
+    padding: 10px 0;
+}
+.productos article i{
+    color: var(--verde);
+    border: 1px solid var(--verde);
+    background: var(--blanco);
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+}
+.info-producto {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid var(--grisClaro);
+}
 .titulares {
     font-size: 24px;
 }
 .precios {
     font-size: 18px;
-    width: 30%;
+    width: 30%; 
 }
 .descuentos {
     font-size:16px;
     color: var(--verde);
-    width: 70%;
+    width: 70%; 
 }
+.descripcion-footer
 .descripciones {
     font-size: 16px;
+    font-weight: normal;
 }
+h3,
+.descripciones {
+    color: var(--grisOscuro);
+}
+article {
+    margin-bottom: 15px;
+}
+main section div.productos article i {
+    transition: transform 1s;
+}
+main section div.productos article:hover i {
+    transform: rotate(-90deg);
+}
+
 .info {
     text-align: center;
 }
 .info i{
     size: 2em;
     margin-bottom: 10px;
-    color: var(--azul)
-}
-h3 {
-    color: var(--grisOscuro)
+    color: var(--azul);
 }
 footer {
-    background: var(--blanco)
-}
-.articulos {
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-}
-.info-producto {
     background: var(--blanco);
-    border-bottom: 1px solid #ebebeb;
-    padding: 15px;
 }
-.info-producto i{
-    display: block;
-    font-size: 16px;
-    padding:5px;
-    width:30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-.ip {
+
+/** FORMULARIOS */
+.login-formulario {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.login-nombre {
+    margin-bottom: 50px;
+    width: 800px;
+    height: 50px;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.login-contraseña {
+    margin-bottom: 70px;
+    width: 800px;
+    height: 50px;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.login-button button{
+    width: 800px;
+    height: 50px;
+    background: var(--celeste);
+    border: none;
+    font-size: 16px;
+}
+.login-enviar {
+    color: var(--blanco);
+}
+
+.register-h3 {
+    color: var(--negro);
+}
+
+.register-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.register-cuenta {
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding-left: 10px;
+}
+.register-perfil{
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.register-intereses{
+    width: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.register-h3-2 {
+    color: var(--negro);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.register-button {
+    width: 250px;
+    height: 50px;
 }
