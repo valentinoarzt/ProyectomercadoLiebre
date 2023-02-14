@@ -94,7 +94,24 @@
 
     article:hover {
         height: 19em;
-    }   
+    }  
+    .info-1 {
+        width: 325px;
+        height: 200px;
+        position: absolute;
+    } 
+    .info-2 {
+        width: 325px;
+        height: 200px;
+        position: absolute;
+        left: 350px;
+    } 
+    .info-3 {
+        width: 325px;
+        height: 200px;
+        position: relative;
+        left: 700px;
+    } 
 }
 
 /* TV hasta 1366 */
@@ -111,4 +128,21 @@
     article:hover {
         height: 24em;
     }
+    .info-1 {
+        width: 425px;
+        height: 200px;
+        position: absolute;
+    } 
+    .info-2 {
+        width: 425px;
+        height: 200px;
+        position: absolute;
+        left: 435px;
+    } 
+    .info-3 {
+        width: 425px;
+        height: 200px;
+        position: relative;
+        left: 870px;
+    } 
 }

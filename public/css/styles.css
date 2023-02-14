@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    background: var(--grisClaro);
+}
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+ul {
+    font-size: 16px; 
+    list-style: none;
+    padding: 0; 
+}
+img {
+    width: 100%;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background: var(--amarillo);
+    display: flex;
+    flex-direction: column;
+}
+div.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+nav.menu-container {
+    display: none;
+}
+div.burger-container {
+    display: flex;
+    justify-content: center;
+}
+div.logo-bar-container {
+    display: flex;
+}
+div.card-container {
+    padding: 15px;
+}
+div.logo {
+    width: 50%;
+    padding: 10px;
+}
+div.search-button-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+div.search-container {
+    display: flex;
+    height: 25px;
+    width: 90%;
+}
+h2.card-title {
+    font-weight: 400;
+    text-align: center;
+}
+h2.card-title i{
+    margin-right: 10px;
+}
+div.search-container input {
+    width: 95%;
+    border:none;
+    background-color: var(--blanco);
+    border-radius: 5px 0 0 5px;
+}
+div.search-container button {
+    width: 15%;
+    padding: 1px;
+    border: none;
+    background-color: var(--blanco);
+    border-radius: 0 5px 5px 0;
+}
+div.burger-menu {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    color: var(--blanco);
+    background-color: var(--azul);
+}
+main h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ultima-visita,
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ultima-visita .productos,
+.ofertas .productos {
+    width: 95%;
+}
+.productos article {
+    background: var(--blanco);
+    padding: 10px 0;
+}
+.productos article i{
+    color: var(--verde);
+    border: 1px solid var(--verde);
+    background: var(--blanco);
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+}
+.info-producto {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid var(--grisClaro);
+}
+.titulares {
+    font-size: 24px;
+}
+.precios {
+    font-size: 18px;
+    width: 30%; 
+}
+.descuentos {
+    font-size:16px;
+    color: var(--verde);
+    width: 70%; 
+}
+.descripcion-footer
+.descripciones {
+    font-size: 16px;
+    font-weight: normal;
+}
+h3,
+.descripciones,
+.footer-h6 {
+    color: var(--grisOscuro);
+}
+article {
+    margin-bottom: 15px;
+}
+main section div.productos article i {
+    transition: transform 1s;
+}
+main section div.productos article:hover i {
+    transform: rotate(-90deg);
+}
+
+.info {
+    text-align: center;
+}
+.info i{
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+footer {
+    background: var(--blanco);
+}
+.descripcion-footer {
+    height: 50px;
+}
+.footer-h6 {
+    margin-top: 10px;
+}
+.info i:hover{
+    color:var(--amarillo);
+}
+
+/** FORMULARIOS */
+
+.login-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.login-nombre {
+    margin-bottom: 50px;
+    width: 800px;
+    height: 50px;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.login-contraseña {
+    margin-bottom: 70px;
+    width: 800px;
+    height: 50px;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.login-button button{
+    width: 800px;
+    height: 50px;
+    background: var(--celeste);
+    border: none;
+    font-size: 16px;
+}
+.login-enviar {
+    color: var(--blanco);
+}
+.login-button  button:hover {
+    background: #0022AA;
+}
+
+
+.register-h3 {
+    color: var(--negro);
+}
+
+.register-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.register-cuenta {
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding-left: 10px;
+}
+.register-perfil{
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.register-intereses{
+    width: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.register-h3-2 {
+    color: var(--negro);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.register-button {
+    width: 250px;
+    height: 50px;
+}
