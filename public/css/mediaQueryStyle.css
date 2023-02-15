@@ -118,31 +118,32 @@
 @media (min-width: 1200px) {
     .ultima-visita,
     .ofertas {
-        height: 380px;
+        height: 550px;
     }
 
     article {
-        height: 22.5em;
+        height: 30em;
     }
 
     article:hover {
-        height: 24em;
+        height: 32.5em;
     }
     .info-1 {
-        width: 425px;
+        width: 500px;
         height: 200px;
         position: absolute;
+        left: 30px;
     } 
     .info-2 {
-        width: 425px;
+        width: 500px;
         height: 200px;
         position: absolute;
-        left: 435px;
+        left: 682px;
     } 
     .info-3 {
-        width: 425px;
+        width: 500px;
         height: 200px;
         position: relative;
-        left: 870px;
+        left: 1330px;
     } 
 }
