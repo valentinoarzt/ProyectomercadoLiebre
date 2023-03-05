@@ -122,11 +122,11 @@
     }
 
     article {
-        height: 30em;
+        height: 23em;
     }
 
     article:hover {
-        height: 32.5em;
+        height: 25em;
     }
     .info-1 {
         width: 400px;
